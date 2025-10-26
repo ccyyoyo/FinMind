@@ -1,5 +1,15 @@
 # FinMind-Arena
 
-Comprehensive documentation for the FinMind-Arena project lives in the [`docs/`](docs/) directory. Start with [`docs/README.md`](docs/README.md) for a guided tour of the system overview, architecture, agent design, data sources, and deployment plans.
+Comprehensive documentation for the FinMind-Arena project lives in the `docs/` directory. Start with `docs/README.md` for a tour of the system overview, architecture, agent design, data sources, and deployment plans.
 
-Need Traditional Chinese documentation? Explore the localized hub at [`docs/zh-hant/README.md`](docs/zh-hant/README.md).
+## Initial Scaffold
+- Backend (FastAPI): `backend/app`, Dockerfile at `backend/Dockerfile`
+- Compose services: `docker-compose.yml` (API + TimescaleDB)
+- API endpoints: `GET /health`, `POST /analyze`
+
+Quick start:
+- Copy env: `cp .env.example .env`
+- Build & run: `docker compose up --build`
+- Docs: visit `http://localhost:8000/docs`
+
+Traditional Chinese docs: `docs/zh-hant/README.md`.
